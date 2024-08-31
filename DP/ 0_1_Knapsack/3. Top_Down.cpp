@@ -4,7 +4,6 @@
 using namespace std;
 
 int knapsack(vector<int>& W, vector<int>& V,  int n, int capacity) {
-    
     vector<vector<int>> dp(n + 1, vector<int>(capacity + 1, -1));
     for(int i = 0; i <= n; i++)               // initialization dp[0][j] = 0, dp[i][j] = 0
         dp[i][0] = 0;
